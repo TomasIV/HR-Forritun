@@ -1,23 +1,19 @@
-"""Design an algorithm that finds the maximum positive integer input by a user.  
-   The user repeatedly inputs numbers until a negative value is entered.
- 
-Make sure that you write up the algorithm before starting to code.
-Then implement the algorithm in Python. Put your algorithmic description as a comment in the program file."""
- 
 """
 Algorithm
-1. take input from the user
-2. max_int = 0
-3. state that if the number is more than or equal to 0 a while loop will run
-4. the while loop will compare user input to the max_int and if its bigger the input becomes the max_int
+1. max_int = 0
+2. make a while loop
+3. take an input from the user
+4. state that if the number is more than or equal to 0 and if the user input is more than the max_int,
+   max_int becomes the number input by the user
+5. else stop the loop and print the max_int
 """
 run = True
 max_int = 0
 while run:
-    user_input = int(input("Enter a number: "))
-    if user_input >= 0:
-        if user_input > max_int:
-            max_int = user_input
+    num_int = int(input("Input a number: "))
+    if num_int >= 0:
+        if num_int > max_int:
+            max_int = num_int
     else:
         run = False
-print (max_int)
+print ("The maximum is", max_int)
