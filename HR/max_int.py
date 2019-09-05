@@ -16,4 +16,8 @@ while run:
             max_int = num_int
     else:
         run = False
+<<<<<<< HEAD
 print ("The maximum is", max_int)
+=======
+print ("The maximum is", max_int)
+>>>>>>> f22b50a1a36d22e1bb261a454871a7dec68222a4
