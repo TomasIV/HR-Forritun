@@ -18,11 +18,13 @@ num_1 = 1
 num_2 = 2
 num_3 = 3
 counter = 3
-while counter <= n:
+print (num_1)
+print (num_2)
+print (num_3)
+while counter < n:
     sum = num_1 + num_2 + num_3
     print (sum)
     counter += 1
     num_1 = num_2
     num_2 = num_3
     num_3 = sum
-    
